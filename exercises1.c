@@ -16,12 +16,14 @@ int main1()
 		}
 	}
 	printf("\n");
+	
 	//方法二
 	 //限制范围，累加奇数差值求奇数
 	for (int i = 1; i <= 100; i += 2)
 	{
 		printf("%d ", i);
 	}
+	printf("\n");
 
 	return 0;
 }
