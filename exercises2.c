@@ -1,6 +1,6 @@
 ﻿#include <stdio.h>
 
-int main()
+int main2()
 {
 	//2. 打印9 * 9乘法⼝诀表
 	//2.1 题⽬描述：
@@ -20,4 +20,5 @@ int main()
 	}
 
 	return 0;
+
 }
