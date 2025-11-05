@@ -26,4 +26,5 @@ int main1()
 	printf("\n");
 
 	return 0;
+	
 }
