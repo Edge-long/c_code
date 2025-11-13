@@ -1,4 +1,5 @@
 ﻿#include <stdio.h>
+#include <math.h>
 
 int main3()
 {
@@ -38,8 +39,8 @@ int main3()
 	{
 		//记录是否为素数的标志
 		int flag = 1;
-		//从2~i/2递增试除i，去除大于i一半的数字
-        for (int j = 2; j < i / 2; j++)
+		//从2~根号i递增试除i
+        for (int j = 2; j < sqrt(i); j++)
 		{
 			if (i % j == 0)
 			{
@@ -58,3 +59,4 @@ int main3()
 	return 0;
 
 }
+
