@@ -53,7 +53,9 @@ int main8()
 			Min = num;
 		}
 	}
+	//计算最大值与最小值的差
 	printf("%d\n", max - min);
 
 	return 0;
+
 }
