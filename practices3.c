@@ -5,7 +5,7 @@
 int get_days_of_month(int y, int m);
 int is_leap_year(int y);
 
-int main03()
+int main003()
 {
 	//每年各月份的天数
 	//输入时间年和月，计算当年当月的天数，通过函数实现
@@ -43,3 +43,4 @@ int is_leap_year(int y)
 	return false;
 
 }
+
