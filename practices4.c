@@ -11,7 +11,7 @@ int Fac(int n)
 	return n * Fac(n - 1);
 }
 
-int main04()
+int main004()
 {
 	//求1! + 2! + 3! + 4! + 5! + 6! + 7! + 8! + 9! + 10!的和，!代表阶乘
 
@@ -40,3 +40,4 @@ int main04()
 	
     return 0;
 }
+
