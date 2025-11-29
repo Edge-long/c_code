@@ -2,39 +2,39 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main02()
+int main002()
 {
-	//¶þ·Ö²éÕÒ
-	//ÔÚÒ»¸öÉýÐòµÄÕûÐÍÊý×éÖÐ²éÕÒÖ¸¶¨µÄÖµn£¬ÕÒµ½·µ»ØnµÄÏÂ±ê£¬ÕÒ²»µ½·µ»Ø-1
+	//äºŒåˆ†æŸ¥æ‰¾
+	//åœ¨ä¸€ä¸ªå‡åºçš„æ•´åž‹æ•°ç»„ä¸­æŸ¥æ‰¾æŒ‡å®šçš„å€¼nï¼Œæ‰¾åˆ°è¿”å›žnçš„ä¸‹æ ‡ï¼Œæ‰¾ä¸åˆ°è¿”å›ž-1
 
 	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-	int n = 0; //´æ´¢ÊäÈëÖµ
+	int n = 0; //å­˜å‚¨è¾“å…¥å€¼
 	scanf("%d", &n);
-	//²éÕÒÓò×óÖµÏÂ±ê
+	//æŸ¥æ‰¾åŸŸå·¦å€¼ä¸‹æ ‡
 	int left = 0;
-	//²éÕÒÓòÓÒÖµÏÂ±ê
+	//æŸ¥æ‰¾åŸŸå³å€¼ä¸‹æ ‡
 	int right = sizeof(arr) / sizeof(arr[0]) - 1;
-	//²éÕÒÓòÖÐ¼äÖµÏÂ±ê
+	//æŸ¥æ‰¾åŸŸä¸­é—´å€¼ä¸‹æ ‡
 	int mid = 0;
-	//²éÕÒ±êÖ¾
+	//æŸ¥æ‰¾æ ‡å¿—
 	bool flag = false;
-	//±éÀúÊý×éËõÐ¡²éÕÒÓò
+	//éåŽ†æ•°ç»„ç¼©å°æŸ¥æ‰¾åŸŸ
 	while (left <= right)
 	{
-		//¼ÆËã²éÕÒÓòÖÐ¼äÖµÏÂ±ê
+		//è®¡ç®—æŸ¥æ‰¾åŸŸä¸­é—´å€¼ä¸‹æ ‡
 		mid = (left + right) / 2;
-		//ÖÐ¼äÖµÐ¡ÓÚ²éÕÒÖµ
+		//ä¸­é—´å€¼å°äºŽæŸ¥æ‰¾å€¼
 		if (arr[mid] < n)
 		{
-			//¸ü¸Ä×óÖµÏÂ±êËõÐ¡²éÕÒÓò
+			//æ›´æ”¹å·¦å€¼ä¸‹æ ‡ç¼©å°æŸ¥æ‰¾åŸŸ
 			left = mid + 1;
 		}
-		else if (arr[mid] > n) //ÖÐ¼äÖµ´óÓÚ²éÕÒÖµ
+		else if (arr[mid] > n) //ä¸­é—´å€¼å¤§äºŽæŸ¥æ‰¾å€¼
 		{
-			//¸ü¸ÄÓÒÖµÏÂ±êËõÐ¡²éÕÒÓò
+			//æ›´æ”¹å³å€¼ä¸‹æ ‡ç¼©å°æŸ¥æ‰¾åŸŸ
 			right = mid - 1;
 		}
-		//ÕÒµ½·µ»ØÊäÈëÖµµÄÏÂ±ê
+		//æ‰¾åˆ°è¿”å›žè¾“å…¥å€¼çš„ä¸‹æ ‡
 		else
 		{
 			printf("%d\n", mid);
@@ -42,11 +42,12 @@ int main02()
 			break;
 		}
 	}
-	//Î´ÕÒµ½·µ»Ø-1
+	//æœªæ‰¾åˆ°è¿”å›ž-1
 	if (!flag)
 	{
 		printf("%d\n", -1);
 	}
 
 	return 0;
+
 }
