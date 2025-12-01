@@ -14,7 +14,7 @@ int main9()
 		scanf("%d", &arr[i]);
 	}
 	//冒泡排序
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 10 - 1; i++)
 	{
 		//判断数组升序标志
 		int flag = 1;
@@ -41,4 +41,5 @@ int main9()
 	printf("\n");
 
 	return 0;
+
 }
