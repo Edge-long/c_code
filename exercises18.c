@@ -1,6 +1,7 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+//逆序字符串的函数
 char* reverse(char* p)
 {
 	//定义两个指针变量分别指向字符串的第一个和最后一个字符
@@ -30,4 +31,5 @@ int main18()
 	printf("%s\n", reverse(string));
 
 	return 0;
+
 }
