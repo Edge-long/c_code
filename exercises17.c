@@ -23,7 +23,8 @@ int main17()
 
 	char string[31] = { 0 };
 	scanf("%[^\n]s", string);
-	printf("%zu", Strlen(string));
+	printf("%zu\n", Strlen(string));
 	
 	return 0;
+
 }
