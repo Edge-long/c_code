@@ -1,5 +1,6 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <string.h>
 
 //逆序字符串的函数
 char* reverse(char* p)
@@ -33,3 +34,4 @@ int main18()
 	return 0;
 
 }
+
