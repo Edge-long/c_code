@@ -57,6 +57,10 @@ int main4()
 	    	printf("普通三角形\n");
 	    }
 	}
+	else
+	{
+		printf("非三角形\n");
+	}
 
 	return 0;
 }
