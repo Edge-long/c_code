@@ -1,5 +1,6 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <stdlib.h>
 
 //将有序数组nums2合并到有序数组nums1中，结果保持数组nums1升序排序
 
@@ -141,3 +142,4 @@ int main23()
 	return 0;
 
 }
+
